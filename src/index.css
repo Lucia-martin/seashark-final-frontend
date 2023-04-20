@@ -1,0 +1,249 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: whitesmoke;
+}
+
+.lobby {
+  background-color: #242424;
+  color:ghostwhite;
+  font-size: large;
+  padding: 100px;
+  border-radius: 10px;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+input {
+  border:none;
+  border-radius: 10px;
+  color:black;
+  /* width: 332px; */
+  padding: 10px 10px;
+  font-size: 1em;
+  background-color: ghostwhite;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+div.chooseProject {
+  padding: 150px;
+  border-radius: 5px;
+  background-color: #242424;
+  color:white;
+}
+
+button.lobbyBtn{
+  border-radius: 10px;
+  width: 350px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #eea039;
+  color:white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lobby input {
+   width: 332px;
+}
+svg {
+  margin:5px;
+  transition: 0.3s;
+}
+
+svg:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+button:focus,
+button:focus-visible, 
+input:focus, 
+input:focus-visible {
+  outline: none;
+}
+
+.projects {
+  display:flex;
+  position: fixed;
+  flex-direction: row;
+  top:0;
+  left:0;
+  background-color:#242424;
+  color:white;
+  width: 100%;
+}
+
+.project {
+  padding: 30px;
+  border-right: 3px solid lightgray;
+  margin:0 15spx;
+}
+
+.projectForm {
+  display:flex;
+  padding: 0 10px;
+  flex-direction: column;
+  font-size: small;
+  margin: 0 10px;
+}
+
+.projectForm button {
+  background-color: #eea039;
+  border:none;
+  padding:8px;
+  color:white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.projectForm input {
+  padding:8px;
+  color:black;
+  text-transform: uppercase;
+}
+
+
+/* .project:hover {
+  background-color: black;
+} */
+
+.project button, .todoArea button {
+  background-color: #eea039;
+  color:white;
+  border:none;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color: black;
+  color:white;
+  transform: scale(1.1);
+}
+
+.todoArea form {
+  margin: 100px auto 20px;
+  background-color: #242424;
+  width:50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.todoArea input {
+  width: 70%;
+  margin-top: 10px;
+}
+
+
+.todos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.todo {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 20px;
+}
+
+.complete {
+  text-decoration: line-through;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 20px;
+  color: lightslategray;
+}
+
+
+.tag {
+  border-radius: 5px;
+}
+
+
+.neutral {
+  background-color: rgb(218, 220, 224);
+}
+
+.happiness {
+  background-color: rgb(255, 228, 193);
+}
+
+.hate {
+  background-color: rgb(255, 193, 193);
+}
+
+.worry {
+  background-color: rgb(234, 226, 255);
+}
+
+.enthusiasm {
+  background-color: rgb(223, 236, 201);
+}
+
+.surprise {
+  background-color: rgb(241, 213, 240);
+}
+
+.boredom {
+  background-color: rgb(203, 217, 238);
+}
+
+.love {
+  background-color: rgb(255, 214, 233);
+}
+
+.fun {
+  background-color: rgb(255, 244, 195);
+
+}
+
+.relief {
+  background-color: rgb(241, 217, 211);
+}
+
+.empty {
+  background-color: rgb(224, 224, 224);
+
+}
+.deleteTodo {
+  margin-right: 15px;
+}
+
+.doorOpen {
+  display:none;
+}
+
+.svgContainer:hover .doorOpen{
+  display:inline;
+}
+.svgContainer:hover .doorClosed{
+  display:none;
+}
